@@ -4,8 +4,6 @@ var todoListApp = (function () {
   const addTaskInput = document.getElementById('add');
   const tasksCounter = document.getElementById('tasks-counter');
 
-  var a = 10;
-
   async function fetchTodos() {
     // fetch('https://jsonplaceholder.typicode.com/todos').then(function (response) {
     //    return response.json();
@@ -135,8 +133,7 @@ var todoListApp = (function () {
     document.addEventListener('click', handleClickListner);
   }
   return {
-    initialize: initializeApp,
-    a: a
+    initialize: initializeApp
   }
 })();
 
